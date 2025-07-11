@@ -1,0 +1,10 @@
+[package]
+name = "rs-parallel"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.40.0", features = ["rt", "rt-multi-thread", "macros", "sync", "time"] }
+futures = "0.3.30"
+drop_arena = "0.3.0"
+heapless = "0.8.0"

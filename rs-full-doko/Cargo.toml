@@ -1,0 +1,16 @@
+[package]
+name = "rs-full-doko"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+strum = "0.26.3"
+strum_macros = "0.26.4"
+rs-game-utils = { path = "../rs-game-utils" }
+heapless = { version = "0.8.0", features = ["serde"] }
+rand = "0.9.0-beta.1"
+log = "0.4.22"
+cli-table = "0.4.9"
+num-traits = "0.2.19"
+enumset = { version = "1.1.5", features = ["serde"] }
+serde = { version = "1.0.218", features = ["derive"] }

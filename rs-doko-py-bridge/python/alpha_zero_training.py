@@ -1,0 +1,58 @@
+
+from typing import Optional, Any
+from rs_doko_py_bridge import alpha_zero_training
+
+def call_alpha_zero_training(
+        game: str,
+        number_of_batch_receivers: int,
+        batch_nn_max_delay_in_ms: int,
+        batch_nn_buffer_size: int,
+        checkpoint_every_n_epochs: int,
+        probability_of_keeping_experience: float,
+        games_per_epoch: int,
+        max_concurrent_games: int,
+        mcts_iterations: int,
+        dirichlet_alpha: float,
+        dirichlet_epsilon: float,
+        puct_exploration_constant: float,
+        min_or_max_value: float,
+        value_target: str,
+        node_arena_capacity: int,
+        state_arena_capacity: int,
+        cache_size_batch_processor: int,
+        mcts_workers: int,
+        max_concurrent_games_in_evaluation: int,
+        evaluation_every_n_epochs: int,
+        skip_evaluation: bool,
+        network: Any,
+        tensorboard_controller: Any,
+        epoch_start: Optional[int] = None,
+        temperature: Optional[float] = None
+) -> None:
+    alpha_zero_training(
+        game=game,
+        number_of_batch_receivers=number_of_batch_receivers,
+        batch_nn_max_delay_in_ms=batch_nn_max_delay_in_ms,
+        batch_nn_buffer_size=batch_nn_buffer_size,
+        checkpoint_every_n_epochs=checkpoint_every_n_epochs,
+        probability_of_keeping_experience=probability_of_keeping_experience,
+        games_per_epoch=games_per_epoch,
+        max_concurrent_games=max_concurrent_games,
+        mcts_iterations=mcts_iterations,
+        dirichlet_alpha=dirichlet_alpha,
+        dirichlet_epsilon=dirichlet_epsilon,
+        puct_exploration_constant=puct_exploration_constant,
+        min_or_max_value=min_or_max_value,
+        value_target=value_target,
+        node_arena_capacity=node_arena_capacity,
+        state_arena_capacity=state_arena_capacity,
+        cache_size_batch_processor=cache_size_batch_processor,
+        mcts_workers=mcts_workers,
+        max_concurrent_games_in_evaluation=max_concurrent_games_in_evaluation,
+        evaluation_every_n_epochs=evaluation_every_n_epochs,
+        skip_evaluation=skip_evaluation,
+        network=network,
+        tensorboard_controller=tensorboard_controller,
+        epoch_start=epoch_start,
+        temperature=temperature
+    )

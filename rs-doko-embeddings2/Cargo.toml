@@ -1,0 +1,13 @@
+[package]
+name = "rs-doko-embeddings2"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rand = "0.9.0-alpha.2"
+rand_distr = "0.5.0-alpha.3"
+heapless = "0.8.0"
+rs-tictactoe = { path = "../rs-tictactoe" }
+rs-doko = { path = "../rs-doko" }
+rs-doko-evaluator = { path = "../rs-doko-evaluator" }
+tensorboard-rs = "0.5.9"

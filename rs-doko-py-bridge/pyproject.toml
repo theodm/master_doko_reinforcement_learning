@@ -1,0 +1,40 @@
+[project]
+name = "rs-doko-py-bridge"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "Theodor Diesner-Mayer", email = "theo.dm94@gmail.com" }
+]
+dependencies = [
+    "torch>=2.4.0",
+    "numpy>=2.1.0",
+    "pytest>=8.3.2",
+    "tqdm>=4.67.1",
+    "pandas>=2.2.3",
+    "matplotlib>=3.10.0",
+    "pyqt5>=5.15.11",
+    "jaxtyping>=0.2.38",
+    "tensorboard>=2.19.0",
+    "tensorboardx>=2.6.2.2",
+    "maturin>=1.8.2",
+    "vastai>=0.2.8",
+    "torch-tensorrt>=2.6.0",
+    "light-dataloader>=1.0.7",
+]
+readme = "README.md"
+requires-python = ">= 3.11"
+
+[build-system]
+requires = ["maturin>=1.2,<2.0"]
+build-backend = "maturin"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "pip>=24.2",
+]
+
+[tool.maturin]
+python-source = "python"
+module-name = "rs_doko_py_bridge"
+features = ["pyo3/extension-module"]

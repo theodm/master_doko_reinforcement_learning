@@ -1,0 +1,21 @@
+[package]
+name = "rs-doko-evaluator"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rand = "0.9.0-alpha.2"
+rs-doko = { path = "../rs-doko" }
+rs-full-doko = { path = "../rs-full-doko" }
+rs-doko-mcts = { path = "../rs-doko-mcts" }
+rs-doko-alpha-zero = { path = "../rs-doko-alpha-zero" }
+heapless = "0.8.0"
+strum = "0.26.3"
+strum_macros = "0.26.4"
+rayon = "1.10.0"
+rs-unsafe-arena = { path = "../rs-unsafe-arena" }
+async-trait = "0.1.85"
+async-channel = "2.3.1"
+tokio = "1.43.0"
+rs-doko-networks = { path = "../rs-doko-networks" }
+rs-doko-impi = { path = "../rs-doko-impi" }

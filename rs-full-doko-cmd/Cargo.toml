@@ -1,0 +1,9 @@
+[package]
+name = "rs-full-doko-cmd"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rs-full-doko = { path = "../rs-full-doko" }
+rand = "0.9.0-beta.1"
+dialoguer = "0.11.0"

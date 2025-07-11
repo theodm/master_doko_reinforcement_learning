@@ -1,0 +1,9 @@
+[package]
+name = "rs-doko-assignment"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rand = "0.9.0-alpha.2"
+rs-doko = { path = "../rs-doko" }
+itertools = "0.13.0"

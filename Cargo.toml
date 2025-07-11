@@ -1,0 +1,6 @@
+[workspace]
+
+members = [
+    "rs-doko-py-bridge",
+    "rs-doko", "rs-doko-mcts", "rs-doko-assignment", "rs-doko-evaluator", "rs-doko-alpha-zero", "rs-tictactoe", "rs-doko-embeddings", "rs-doko-embeddings2", "rs-parallel",  "rs-doko-experiments", "rs-unsafe-arena", "rs-full-doko", "rs-game-utils", "rs-full-doko-cmd",  "rs-doko-networks", "rs-doko-impi",
+]

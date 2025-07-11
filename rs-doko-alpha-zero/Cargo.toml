@@ -1,0 +1,39 @@
+[package]
+name = "rs-doko-alpha-zero"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rand = "0.9.0-alpha.2"
+rand_distr = "0.5.0-alpha.3"
+heapless = { version = "0.8.0", features = ["serde"] }
+rs-tictactoe = { path = "../rs-tictactoe" }
+rs-doko = { path = "../rs-doko" }
+rs-full-doko = { path = "../rs-full-doko" }
+rs-doko-networks = { path = "../rs-doko-networks" }
+tensorboard-rs = "0.5.9"
+tokio = { version = "1.40.0", features = ["rt", "rt-multi-thread", "macros", "sync", "time"] }
+time = "0.3.36"
+futures = "0.3.30"
+mimalloc = { version = "*"}
+quick_cache = "0.6.9"
+fxhash = "0.2.1"
+indicatif = "0.17.8"
+graphviz-rust = "0.9.0"
+rs-unsafe-arena = { path = "../rs-unsafe-arena" }
+async-trait = "0.1.85"
+async-channel = "2.3.1"
+strum = "0.26.3"
+strum_macros = "0.26.4"
+sled = "0.34.7"
+bincode = "1.3.3"
+serde = { version = "1.0.208", features = ["derive"] }
+bytemuck = "1.18.0"
+chrono = "0.4.40"
+
+[build]
+rustflags = ["-C", "target-cpu=native"]
+
+[profile.release]
+lto = true
+debug = 1
